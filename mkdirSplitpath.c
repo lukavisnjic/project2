@@ -36,7 +36,7 @@ void mkdir(char pathName[]){
 	// Already Exists Check
 	struct NODE* exists = findNode(parent, baseName);
 	if (exists) {
-		printf("MKDIR ERROR: directory %s already exists\n", baseName);
+		printf("MKDIR ERROR: directory %s already exists\n", pathName);
 		return;
 	}
 
